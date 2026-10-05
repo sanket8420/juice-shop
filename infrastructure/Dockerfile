@@ -1,4 +1,4 @@
-FROM node:20.19.2-bookworm-slim AS base
+FROM node:20.20.2-alpine3.23 AS base
 RUN apt-get update && apt-get install -y --no-install-recommends \
     dumb-init=1.2.5-* \
     && rm -rf /var/lib/apt/lists/*
